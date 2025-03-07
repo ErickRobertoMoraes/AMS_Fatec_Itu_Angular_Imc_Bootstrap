@@ -7,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrl: './form.component.css'
 })
 export class FormComponent {
+  num1: number = 0;
+  num2: number = 0;
+  sum: number = 0;
 
+
+  onClickImc(){
+    this.sum = this.num2/(this.num1 * this.num1)
+  }
 }
